@@ -1,0 +1,42 @@
+
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "FireArchy",
+      "description": "A three-product IoT solution aimed at supporting individuals at risk of wildfires.",
+      "image": "/images/FireArchy.png",
+      "tags": ["NASA firms.api", "Canva", "Innovation", "Pitch Deck"],
+      
+      "linkedinLink": "https://www.linkedin.com/posts/gabriel-bendix_innovation-teamwork-nasa-activity-7259972938752315393-hjVI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEEPwj8Bbmf-5BAFm33qVwq1O5r4D3HIcKo"
+    },
+    {
+      "id": 2,
+      "title": "MediConnect",
+      "description": "Phone application to help customers navigate a foreign healthcare system when traveling with chronic health conditions.",
+      "image": "/images/MediConnect.png",
+      "tags": ["Figma", "Canva", "Innovation", "Pitch Decks"],
+      
+      "linkedinLink": "https://www.linkedin.com/posts/gabriel-bendix_i-am-overjoyed-to-announce-that-this-past-activity-7237300871238221824--ECA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEEPwj8Bbmf-5BAFm33qVwq1O5r4D3HIcKo"
+    },
+    {
+      "id": 3,
+      "title": "The LeakLock",
+      "description": "Developed a flow rate checking valve that stops leaks in lawn sprinkler systems.",
+      "image": "/images/LeakLock.JPG",
+      "tags": ["Canva", "Innovation", "Pitch Decks"],
+      
+      "linkedinLink": "https://www.linkedin.com/posts/gabriel-bendix_last-tuesdayi-had-the-opportunity-to-participate-activity-7186736561604964352-fYGg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEEPwj8Bbmf-5BAFm33qVwq1O5r4D3HIcKo"
+    },
+    {
+      "id": 4,
+      "title": "Portfolio Website",
+      "description": "Modern interface with dynamic content management and responsive design.",
+      "image": "/images/portfolio.png",
+      "tags": ["React.js", "Next.js", "Tailwind", "TypeScript", "Node.js"],
+      
+      "codeLink": "https://github.com/Gbendi023/gabrielbendix-site.git",
+      "demoLink": "https://yourportfolio.vercel.app"
+    }
+  ]
+}

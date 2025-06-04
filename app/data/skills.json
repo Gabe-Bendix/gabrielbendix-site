@@ -1,0 +1,33 @@
+{
+  "categories": [
+    {
+      "name": "Hardware Development",
+      "skills": [
+        { "name": "Verilog", "level": 60 },
+        { "name": "VHDL", "level": 90 },
+        { "name": "AVR Assembly", "level": 90 },
+        { "name": "Vivado", "level": 50 },
+        { "name": "FPGA Design", "level": 60 }
+      ]
+    },
+    {
+      "name": "Full-Stack Development",
+      "skills": [
+        { "name": "React.js", "level": 90 },
+        { "name": "Next.js", "level": 90 },
+        { "name": "TypeScript", "level": 95 },
+        { "name": "Tailwind CSS", "level": 100 },
+        { "name": "Node.js", "level": 95 }
+      ]
+    },
+    {
+      "name": "Tools & Others",
+      "skills": [
+        { "name": "Git & GitHub", "level": 90 },
+        { "name": "Bluebeam Revu", "level": 60 },
+        { "name": "C++", "level": 95 },
+        { "name": "Python", "level": 95 }
+      ]
+    }
+  ]
+}
