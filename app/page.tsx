@@ -147,7 +147,7 @@ export default function Home() {
 
             {/* link to Github */}
             <a
-              href="https://github.com/Gbendi023"
+              href="https://github.com/Gabe-Bendix"
               target="_blank"
               rel="noopener noreferrer"
             >
