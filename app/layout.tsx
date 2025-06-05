@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import LetterGlitch from "@/components/LetterGlitch";
+import { Analytics } from "@vercel/analytics/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,6 +38,7 @@ export default function RootLayout({
 
         {/* Page content (children) on top of glitch (z-index 10) */}
         <div className="relative z-10">{children}</div>
+        <Analytics />
       </body>
     </html>
   );
