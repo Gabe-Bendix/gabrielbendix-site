@@ -56,12 +56,12 @@ const page = () => {
 
             <div>
               <p className="font-medium">FPGA Researcher</p>
-              <p className="text-neutral-500">University of Florida, 2025–present</p>
+              <p className="text-neutral-500">University of Florida, 2025–Current</p>
             </div>
 
 
             <div>
-              <p className="font-medium">Senior Web Developer</p>
+              <p className="font-medium">Outreach Coordinator</p>
               <p className="text-neutral-500">EII IGNITE, 2024</p>
             </div>
 

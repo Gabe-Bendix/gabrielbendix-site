@@ -53,9 +53,9 @@ export default function Home() {
 
         {/* ───────── ROTATING Job Title + Paragraph ───────── */}
         <div className="mt-10 mb-0"> {/*to edit space below the pfp*/}
-          <div className="text-2xl font-semibold text-white text-left flex flex-wrap items-center gap-2">
-            Gabriel Bendix, a
-            <span className="inline-block">
+          <div className="flex justify-start items-center text-2xl font-semibold text-white text-left flex flex-wrap items-center gap-2">
+            <h1>Gabriel Bendix, a</h1>
+            <div style={{ display: "flex" }} className="inline-block justify-center items-center">
               <RotatingText
                 texts={[
                   "UF Student",
@@ -84,7 +84,7 @@ export default function Home() {
                 transition={{ type: "spring", damping: 30, stiffness: 400 }}
                 rotationInterval={2000}
               />
-            </span>
+            </div>
           </div>
         </div>
 

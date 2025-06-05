@@ -51,7 +51,7 @@ const page = () => {
                             </div>
 
                             <div className="p-6">
-                                
+
                                 {/* Title & description */}
                                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                                 <p className="text-gray-300 mb-4">{project.description}</p>
@@ -107,8 +107,8 @@ const page = () => {
                                     )}
                                     {project.demoLink && (
                                         <Button
-                                            variant="ghost"
-                                            className="flex-1 text-gray-300 backdrop-blur-sm border-neutral-800/70 transition-colors duration-200 ease-linear"
+                                            variant="outline"
+                                            className="flex-1 text-white bg-black backdrop-blur-sm border-neutral-800/70 transition-colors duration-200 ease-linear"
                                             asChild
                                         >
                                             <a

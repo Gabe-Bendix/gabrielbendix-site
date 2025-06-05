@@ -4,39 +4,39 @@
     {
       "id": 1,
       "title": "FireArchy",
-      "description": "A three-product IoT solution aimed at supporting individuals at risk of wildfires.",
+      "description": "Created a system combining NASA FIRMS API data with a mobile app and hardware alarm to notify users (and at-risk relatives) when wildfires approach.",
       "image": "/images/FireArchy.png",
-      "tags": ["NASA firms.api", "Canva", "Innovation", "Pitch Deck"],
+      "tags": ["IoT & Embedded‐Device Integration", "API Data Fusion & Real‐Time Alerts", "Storytelling & Problem Framing"],
       
       "linkedinLink": "https://www.linkedin.com/posts/gabriel-bendix_innovation-teamwork-nasa-activity-7259972938752315393-hjVI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEEPwj8Bbmf-5BAFm33qVwq1O5r4D3HIcKo"
     },
     {
       "id": 2,
       "title": "MediConnect",
-      "description": "Phone application to help customers navigate a foreign healthcare system when traveling with chronic health conditions.",
+      "description": "Built a product to translate prescriptions into local equivalents, locate nearby pharmacies/hospitals, and auto-translate preloaded patient records for emergency responders.",
       "image": "/images/MediConnect.png",
-      "tags": ["Figma", "Canva", "Innovation", "Pitch Decks"],
+      "tags": ["User‐Centered Research & Pivoting", "Mobile UX/UI and Localization", "Cross‐Functional Leadership"],
       
       "linkedinLink": "https://www.linkedin.com/posts/gabriel-bendix_i-am-overjoyed-to-announce-that-this-past-activity-7237300871238221824--ECA?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEEPwj8Bbmf-5BAFm33qVwq1O5r4D3HIcKo"
     },
     {
       "id": 3,
       "title": "The LeakLock",
-      "description": "Developed a flow rate checking valve that stops leaks in lawn sprinkler systems.",
+      "description": "Designed a pressure-sensing valve that instantly shuts off damaged sprinkler systems with home and industrial applications.",
       "image": "/images/LeakLock.JPG",
-      "tags": ["Canva", "Innovation", "Pitch Decks"],
+      "tags": ["Rapid Prototyping & CAD Design", "Lean Innovation & Pitch Crafting", "Collaborative Problem Solving"],
       
       "linkedinLink": "https://www.linkedin.com/posts/gabriel-bendix_last-tuesdayi-had-the-opportunity-to-participate-activity-7186736561604964352-fYGg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEEPwj8Bbmf-5BAFm33qVwq1O5r4D3HIcKo"
     },
     {
       "id": 4,
       "title": "Portfolio Website",
-      "description": "Modern interface with dynamic content management and responsive design.",
+      "description": "A custom Next.js/Tailwind portfolio showcasing my projects, rotating text animations, and responsive design to highlight my skills and experience.",
       "image": "/images/portfolio.png",
-      "tags": ["React.js", "Next.js", "Tailwind", "TypeScript", "Node.js"],
+      "tags": ["Next.js & React.js Development", "Tailwind CSS & Responsive Design", "UI/UX Animation and Interaction"],
       
       "codeLink": "https://github.com/Gbendi023/gabrielbendix-site.git",
-      "demoLink": "https://yourportfolio.vercel.app"
+      "demoLink": "https://www.gabrielbendix.com"
     }
   ]
 }
