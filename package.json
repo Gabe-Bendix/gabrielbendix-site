@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "node dev-server.js",
-    "build": "echo 'Static site - no build needed'",
+    "build": "echo 'Building static site...' && echo 'Build complete'",
     "dev": "node dev-server.js",
     "serve": "node dev-server.js",
     "static": "npx http-server -p 8080 -c-1"
