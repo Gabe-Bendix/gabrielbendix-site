@@ -45,28 +45,44 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Send to backend API
             try {
-                // Dynamically determine API URL based on environment
-                const apiBaseUrl = (window.location.hostname === 'localhost' || 
-                                   window.location.hostname === '127.0.0.1' || 
-                                   window.location.hostname.startsWith('192.168.'))
-                    ? 'http://localhost:8000'  // Development
-                    : window.location.origin;  // Production (same origin as frontend)
+                // Determine API URL - works for both local dev and production
+                const apiUrl = `${window.location.origin}/api/contact`;
+                console.log('🚀 Sending request to:', apiUrl);
+                console.log('📦 Request data:', { name, email, subject, messageLength: message.length });
                 
-                const response = await fetch(`${apiBaseUrl}/api/contact`, {
+                const response = await fetch(apiUrl, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
+                        'Accept': 'application/json',
                     },
+                    mode: 'cors',
                     body: JSON.stringify({
                         name: name,
                         email: email,
                         subject: subject,
                         message: message,
-                        website: '' // Honeypot field
+                        website: formData.get('website') || '' // Honeypot field
                     })
                 });
 
-                const data = await response.json();
+                // Debug: log the response details
+                console.log('Response status:', response.status);
+                console.log('Response headers:', response.headers);
+                
+                // Get the raw text first to see what we're actually getting
+                const responseText = await response.text();
+                console.log('Raw response:', responseText);
+                
+                // Try to parse as JSON
+                let data;
+                try {
+                    data = JSON.parse(responseText);
+                } catch (parseError) {
+                    console.error('JSON parse error:', parseError);
+                    console.error('Response was:', responseText);
+                    throw new Error('Server returned invalid JSON: ' + responseText.substring(0, 100));
+                }
 
                 if (response.ok && data.ok) {
                     showFormStatus(data.message || 'Message sent successfully! I\'ll get back to you soon.', 'success');

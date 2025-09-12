@@ -82,24 +82,28 @@ gabrielbendix/
 
 ## 📧 Email Configuration
 
-For the contact form to work, configure your email settings in `.env`:
+To receive contact form messages in your inbox using Gmail SMTP, create a `.env` file in the project root with:
 
 ```env
-# Email Configuration
-EMAIL_TO=your-email@domain.com
-EMAIL_FROM=noreply@yourdomain.com
-
-# SMTP Settings (Gmail example)
+# SMTP Settings (Gmail)
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
-SMTP_USER=your-gmail@gmail.com
+SMTP_USER=your-email@gmail.com
 SMTP_PASS=your-app-password
+
+# Where to send contact form submissions
+EMAIL_TO=your-email@gmail.com
+EMAIL_FROM=your-email@gmail.com
 ```
 
 ### Gmail Setup
-1. Enable 2-factor authentication
-2. Generate an App Password: [Google Account Security](https://myaccount.google.com/security)
-3. Use the app password in `SMTP_PASS`
+1. Enable 2-factor authentication on your Google account
+2. Create an App Password: Google Account → Security → App passwords
+3. Use the app password as `SMTP_PASS`
+4. Restart the dev server after changes: `npm run dev`
+
+### Vercel Production
+Set the same variables in Vercel → Project → Settings → Environment Variables and redeploy.
 
 ## 🎨 Customization
 
