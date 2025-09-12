@@ -167,7 +167,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 📞 Contact
 
-- **Email**: gabriel.bendix@ufl.edu
 - **LinkedIn**: [Gabriel Bendix](https://linkedin.com/in/your-profile)
 - **GitHub**: [Gabe-Bendix](https://github.com/Gabe-Bendix)
 

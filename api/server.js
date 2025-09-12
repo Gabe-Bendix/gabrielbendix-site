@@ -150,7 +150,7 @@ app.post('/api/contact', contactRateLimit, validateContact, async (req, res) => 
     }
 
     // Email configuration
-    const emailTo = process.env.EMAIL_TO || 'gabrielbendix@ufl.edu';
+    const emailTo = process.env.EMAIL_TO || 'your-email@example.com';
     const emailFrom = process.env.EMAIL_FROM || process.env.SMTP_USER || 'noreply@portfolio.com';
 
     const mailOptions = {

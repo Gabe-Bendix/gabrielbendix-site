@@ -446,7 +446,7 @@ function ContactPage() {
             <div className="contact-details">
               <div className="contact-item">
                 <i className="fas fa-envelope"></i>
-                <span>gabriel.bendix@ufl.edu</span>
+                <span>Contact me through the form below</span>
               </div>
               <div className="contact-item">
                 <i className="fas fa-map-marker-alt"></i>
