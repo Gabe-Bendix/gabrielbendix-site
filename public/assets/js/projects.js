@@ -6,9 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Filter projects based on category
     function filterProjects(category) {
         projectCards.forEach(card => {
-            const cardCategory = card.getAttribute('data-category');
-            
-            if (category === 'all' || cardCategory === category) {
+            const raw = card.getAttribute('data-category') || '';
+            const categories = raw.split(/[ ,]+/).filter(Boolean);
+
+            if (category === 'all' || categories.includes(category)) {
                 card.style.display = 'block';
                 card.style.animation = 'fadeInUp 0.5s ease forwards';
             } else {

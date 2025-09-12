@@ -414,11 +414,15 @@ body {
 }
 
 .featured-project-highlights li::before {
-    content: '▶';
+    content: '';
     position: absolute;
     left: 0;
-    color: #4ade80;
-    font-size: 0.8rem;
+    top: 0.35rem;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 7px solid #4ade80;
 }
 
 .featured-project-tech {
@@ -1122,11 +1126,15 @@ body {
 }
 
 .work-achievements li::before {
-    content: '▶';
+    content: '';
     position: absolute;
     left: 0;
-    color: #4ade80;
-    font-size: 0.8rem;
+    top: 0.35rem;
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 7px solid #4ade80;
 }
 
 .work-tech {
@@ -1531,6 +1539,33 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    html {
+        font-size: 87.5%;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    .nav-logo a {
+        font-size: 1.25rem;
+    }
+
+    .hero-photo {
+        max-width: 280px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .project-image {
+        height: 240px;
+    }
+
+    .featured-image-grid {
+        height: 260px;
+    }
     .nav-toggle {
         display: flex;
     }
@@ -1682,8 +1717,40 @@ body {
 }
 
 @media (max-width: 480px) {
+    /* Featured Project: center Key Features on phones and remove triangles */
+    .featured-project-highlights ul {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .featured-project-highlights li {
+        padding-left: 0;
+    }
+
+    .featured-project-highlights li::before {
+        content: none;
+        border: none;
+    }
+    /* Ensure rotating text centers properly on phones */
+    .rotating-text {
+        min-width: 0;
+        text-align: center;
+    }
+
+    /* Center education icon and align content when stacked on phones */
+    .education-content {
+        align-items: center;
+    }
+
+    .education-icon {
+        margin: 0 auto;
+    }
+    html {
+        font-size: 81.25%;
+    }
+
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .hero-subtitle {
@@ -1696,6 +1763,35 @@ body {
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+
+    .featured-image-grid {
+        height: 220px;
+    }
+
+    .contact-social a {
+        width: 44px;
+        height: 44px;
+    }
+
+    .social-link {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Ensure project tech tags show clearly on phones */
+    .project-card {
+        overflow: visible;
+    }
+    .project-tech {
+        justify-content: center;
+    }
+    .tech-tag {
+        font-size: 0.8rem;
     }
 }
