@@ -1,0 +1,59 @@
+{
+  "name": "gabrielbendix-portfolio",
+  "version": "1.0.0",
+  "description": "Gabriel Bendix Personal Portfolio Website - Modern, responsive portfolio showcasing projects, experience, and skills",
+  "main": "api/server.js",
+  "homepage": "https://gabrielbendix.dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gabe-Bendix/gabrielbendix.git"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "start": "node api/server.js",
+    "backend": "node api/server.js",
+    "frontend": "npx http-server -p 3001 -c-1 --cors",
+    "build": "echo 'No build process needed for vanilla HTML/CSS/JS'",
+    "test": "echo 'No tests specified yet'",
+    "lint": "echo 'Add linting tools here'",
+    "clean": "echo 'Cleaning build artifacts...'",
+    "serve": "npx http-server -p 8080 -c-1"
+  },
+  "keywords": [
+    "portfolio", 
+    "website", 
+    "personal-website",
+    "contact-form",
+    "vanilla-js",
+    "responsive-design",
+    "software-engineer",
+    "web-development"
+  ],
+  "author": {
+    "name": "Gabriel Bendix",
+    "email": "gabriel.bendix@ufl.edu",
+    "url": "https://gabrielbendix.dev"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "nodemailer": "^6.9.8",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
