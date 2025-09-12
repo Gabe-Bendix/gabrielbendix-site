@@ -117,3 +117,6 @@ temp/
 # Build outputs
 dist/
 build/
+
+# Backup files (to avoid deployment confusion)
+backup_react_files/
