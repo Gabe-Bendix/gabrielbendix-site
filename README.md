@@ -1,6 +1,6 @@
-# Gabriel Bendix - Personal Portfolio Website
+# Gabriel Bendix - Personal Portfolio (Next.js)
 
-A modern, responsive personal portfolio website showcasing projects, work experience, and contact information.
+This repo now uses Next.js to serve your existing static `public/index.html` and keeps the contact form working via `pages/api/contact.js`.
 
 ## 🚀 Features
 
@@ -14,10 +14,9 @@ A modern, responsive personal portfolio website showcasing projects, work experi
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Vanilla HTML5, CSS3, JavaScript (ES6+)
-- **Backend**: Node.js with Express.js
-- **Email**: SMTP integration with Gmail
-- **Development**: Local development servers (http-server, Node.js)
+- **Frontend**: Next.js serving static HTML from `public/`
+- **API**: Next.js API Route wrapping your existing handler
+- **Email**: SMTP integration with Gmail (nodemailer)
 
 ## 📁 Project Structure
 

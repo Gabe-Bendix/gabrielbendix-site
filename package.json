@@ -9,11 +9,9 @@
     "url": "https://github.com/Gabe-Bendix/gabrielbendix.git"
   },
   "scripts": {
-    "start": "node dev-server.js",
-    "build": "echo 'Building static site...' && echo 'Build complete'",
-    "dev": "node dev-server.js",
-    "serve": "node dev-server.js",
-    "static": "npx http-server -p 8080 -c-1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 3000"
   },
   "keywords": [
     "portfolio", 
@@ -35,16 +33,10 @@
     "npm": ">=6.0.0"
   },
   "dependencies": {
-    "nodemailer": "^6.9.8",
-    "express": "^4.18.2",
-    "cors": "^2.8.5",
-    "helmet": "^7.1.0",
-    "express-rate-limit": "^7.1.5",
-    "express-validator": "^7.0.1",
-    "dotenv": "^16.3.1"
-  },
-  "devDependencies": {
-    "http-server": "^14.1.1"
+    "next": "^14.2.14",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "nodemailer": "^6.9.8"
   },
   "browserslist": [
     "> 1%",
