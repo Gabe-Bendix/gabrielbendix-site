@@ -27,7 +27,9 @@ function createTransporter() {
   return null;
 }
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
+  console.log('Contact API called:', req.method, req.url);
+  
   // Set CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -165,10 +167,12 @@ This message was sent from your portfolio contact form.
 
   } catch (error) {
     console.error('Contact API error:', error);
+    console.error('Error stack:', error.stack);
     return res.status(500).json({
       ok: false,
       error: 'internal_error',
-      message: 'An unexpected error occurred. Please try again later.'
+      message: 'An unexpected error occurred. Please try again later.',
+      debug: process.env.NODE_ENV === 'development' ? error.message : undefined
     });
   }
 }
