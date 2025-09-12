@@ -33,6 +33,9 @@
     "node": ">=14.0.0",
     "npm": ">=6.0.0"
   },
+  "dependencies": {
+    "nodemailer": "^6.9.8"
+  },
   "devDependencies": {
     "http-server": "^14.1.1"
   },
