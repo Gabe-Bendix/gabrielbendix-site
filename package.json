@@ -13,7 +13,7 @@
     "start": "node api/server.js",
     "backend": "node api/server.js",
     "frontend": "npx http-server -p 3001 -c-1 --cors",
-    "build": "echo 'No build process needed for vanilla HTML/CSS/JS'",
+    "build": "echo 'Static build complete'",
     "test": "echo 'No tests specified yet'",
     "lint": "echo 'Add linting tools here'",
     "clean": "echo 'Cleaning build artifacts...'",
