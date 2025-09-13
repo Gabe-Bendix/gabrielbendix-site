@@ -1,14 +1,12 @@
-export default function Home() {
-  return null;
-}
+import { useEffect } from 'react';
 
-export async function getServerSideProps() {
-  return {
-    redirect: {
-      destination: '/index.html',
-      permanent: false,
-    },
-  };
+export default function Home() {
+  useEffect(() => {
+    // Redirect to the static HTML file
+    window.location.href = '/index.html';
+  }, []);
+
+  return null;
 }
 
 
