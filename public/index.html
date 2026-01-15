@@ -1,591 +1,806 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabriel Bendix</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <link rel="apple-touch-icon" href="assets/images/favicon.png">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Gabriel Bendix</a>
-            </div>
-            <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#work" class="nav-link">Work</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">Gabriel Bendix</a>
         </div>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#work" class="nav-link">Work</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <!-- Glitch Background -->
-        <canvas id="glitch-canvas"></canvas>
-        <div class="hero-container">
-            <div class="hero-content-rectangle">
-                <div class="hero-image">
-                    <img src="assets/images/pfp.JPG" alt="Professional photo of Gabriel Bendix at the 2024 AKC National Championship" class="hero-photo">
-                </div>
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        Hi i'm Gabriel Bendix, a <span class="rotating-text">UF Student</span>
-                    </h1>
-                    <p class="hero-description">
-                        <!-- Hero description removed -->
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#featured" class="btn btn-primary">View My Work</a>
-                    </div>
-                </div>
+      <!-- Glitch Background -->
+      <canvas id="glitch-canvas"></canvas>
+      <div class="hero-container">
+        <div class="hero-content-rectangle">
+          <div class="hero-image">
+            <img
+              src="assets/images/pfp.JPG"
+              alt="Professional photo of Gabriel Bendix at the 2024 AKC National Championship"
+              class="hero-photo"
+            />
+          </div>
+          <div class="hero-text">
+            <h1 class="hero-title">
+              Hi i'm Gabriel Bendix, a
+              <span class="rotating-text">UF Student</span>
+            </h1>
+            <p class="hero-description">
+              <!-- Hero description removed -->
+            </p>
+            <div class="hero-buttons">
+              <a href="#featured" class="btn btn-primary">View My Work</a>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Featured Project Section -->
     <section id="featured" class="featured-project-hero">
-        <div class="container">
-            <h2 class="section-title">Featured Project</h2>
-            <div class="featured-project-content">
-                <div class="featured-project-images">
-                    <div class="featured-image-grid">
-                        <img src="assets/images/finn.png" alt="Quantization with Finn - FPGA Neural Network Accelerator" class="featured-img">
-                    </div>
-                </div>
-                <div class="featured-project-text">
-                    <h3 class="featured-project-title">Quantization with Finn</h3>
-                    <p class="featured-project-description">
-                        I build custom, low-precision neural-network accelerators on PYNQ FPGA Board using FINN, turning quantized PyTorch/ONNX models into streaming, hardware pipelines for edge AI. The work targets W2–W8/A2–A8 quantization to hit real-time latency/throughput on PYNQ-class boards while preserving accuracy.
-                    </p>
-                    <div class="featured-project-highlights">
-                        <h4>Key Features:</h4>
-                        <ul>
-                            <li>Ultra-low latency dataflow</li>
-                            <li>Sub-8-bit quantization</li>
-                            <li>Resource-aware layer folding</li>
-                            <li>RTLSim performance estimates</li>
-                        </ul>
-                    </div>
-                    <div class="featured-project-tech">
-                        <span class="tech-tag featured">Quantization-aware training & QONNX export</span>
-                        <span class="tech-tag featured">FINN dataflow compilation & folding</span>
-                        <span class="tech-tag featured">RTLSim latency/throughput & resource analysis</span>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Featured Project</h2>
+        <div class="featured-project-content">
+          <div class="featured-project-images">
+            <div class="featured-image-grid">
+              <img
+                src="assets/images/finn.png"
+                alt="Quantization with Finn - FPGA Neural Network Accelerator"
+                class="featured-img"
+              />
             </div>
+          </div>
+          <div class="featured-project-text">
+            <h3 class="featured-project-title">Quantization with Finn</h3>
+            <p class="featured-project-description">
+              I build custom, low-precision neural-network accelerators on PYNQ
+              FPGA Board using FINN, turning quantized PyTorch/ONNX models into
+              streaming, hardware pipelines for edge AI. The work targets
+              W2–W8/A2–A8 quantization to hit real-time latency/throughput on
+              PYNQ-class boards while preserving accuracy.
+            </p>
+            <div class="featured-project-highlights">
+              <h4>Key Features:</h4>
+              <ul>
+                <li>Ultra-low latency dataflow</li>
+                <li>Sub-8-bit quantization</li>
+                <li>Resource-aware layer folding</li>
+                <li>RTLSim performance estimates</li>
+              </ul>
+            </div>
+            <div class="featured-project-tech">
+              <span class="tech-tag featured"
+                >Quantization-aware training & QONNX export</span
+              >
+              <span class="tech-tag featured"
+                >FINN dataflow compilation & folding</span
+              >
+              <span class="tech-tag featured"
+                >RTLSim latency/throughput & resource analysis</span
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Other Projects Section -->
     <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Other Projects</h2>
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="web">Web Development</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-                <button class="filter-btn" data-filter="ai">AI/ML</button>
-                <button class="filter-btn" data-filter="fpga">FPGA</button>
-                <button class="filter-btn" data-filter="robotics">Robotics</button>
-            </div>
-            <div class="projects-grid">
-                <!-- Portfolio Website -->
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="assets/images/portfolio.png" alt="Portfolio Website" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3>Portfolio Website</h3>
-                        <div class="project-date">Summer 2025</div>
-                        <p>A custom portfolio showcasing my projects, rotating text animations, and responsive design to highlight my skills and experience. This project demonstrates my ability to create modern, interactive web applications with smooth animations and responsive layouts.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React.js Development</span>
-                            <span class="tech-tag">Tailwind CSS & Responsive Design</span>
-                            <span class="tech-tag">UI/UX Animation and Interaction</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FEI University Robotics -->
-                <div class="project-card" data-category="robotics">
-                    <div class="project-image">
-                        <img src="assets/images/RoboFei.png" alt="FEI University Robotics Team" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3>FEI University Robotics</h3>
-                        <div class="project-date">Summer 2025</div>
-                        <p>Deployed GPU-accelerated computer vision pipeline with ZED 2i depth perception camera, cutting end-to-end latency by 15%. Applied CUDA and ROS on Ubuntu Linux to run autonomous navigation algorithms for a robotics competition.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">GPU-Accelerated Computer Vision</span>
-                            <span class="tech-tag">CUDA & ROS Development</span>
-                            <span class="tech-tag">Autonomous Navigation Algorithms</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- DPU Research -->
-                <div class="project-card" data-category="fpga">
-                    <div class="project-image">
-                        <img src="assets/images/dpu.png" alt="DPU Research Project" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3>FPGA Hardware Pipeline Researcher</h3>
-                        <div class="project-date">Spring 2025</div>
-                        <p>Delivered an edge native pixels to semantics pipeline for UAV swarms in low-bandwidth, GPS denied settings. Developed a streaming multi-object tracker on a Zynq UltraScale+ FPGA with a quantized on-device LLM for high-level reasoning removing cloud dependence. Built a lightweight accelerator via Vivado achieving ~66.7 ms vision-loop (~15 FPS @ 320×240) at 6–10 W with near-zero uplink and <2% FPGA logic.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Event Camera Scene Analysis</span>
-                            <span class="tech-tag">PYNQ FPGA & Machine Learning</span>
-                            <span class="tech-tag">Vivado FPGA Acceleration</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FireArchy -->
-                <div class="project-card" data-category="ai">
-                    <div class="project-image">
-                        <img src="assets/images/FireArchy.png" alt="FireArchy" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3>FireArchy</h3>
-                        <div class="project-date">Fall 2024</div>
-                        <p>Created a system combining NASA FIRMS API data with a mobile app and hardware alarm to notify users (and at-risk relatives) when wildfires approach.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">IoT & Embedded‐Device Integration</span>
-                            <span class="tech-tag">API Data Fusion & Real‐Time Alerts</span>
-                            <span class="tech-tag">Storytelling & Problem Framing</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- MediConnect -->
-                <div class="project-card" data-category="web mobile">
-                    <div class="project-image">
-                        <img src="assets/images/MediConnect.png" alt="MediConnect" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3>MediConnect</h3>
-                        <div class="project-date">Summer 2024</div>
-                        <p>Built a web app deployed serverlessly at near-zero cost that translates prescription requests into local medication equivalents via an AI chatbot and locates open pharmacies using the Leaflet API with address geocoding.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">AI-Driven Healthcare Workflows</span>
-                            <span class="tech-tag">Geolocation & Mapping APIs</span>
-                            <span class="tech-tag">Serverless OpenAI Integration</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- The LeakLock -->
-                <div class="project-card" data-category="robotics">
-                    <div class="project-image">
-                        <img src="assets/images/LeakLock.JPG" alt="The LeakLock" class="project-img">
-                    </div>
-                    <div class="project-content">
-                        <h3>The LeakLock</h3>
-                        <div class="project-date">Spring 2024</div>
-                        <p>Designed a pressure-sensing valve that instantly shuts off damaged sprinkler systems with home and industrial applications.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Rapid Prototyping & CAD Design</span>
-                            <span class="tech-tag">Lean Innovation & Pitch Crafting</span>
-                            <span class="tech-tag">Collaborative Problem Solving</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">Other Projects</h2>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="ai">AI/ML</button>
+          <button class="filter-btn" data-filter="fpga">FPGA</button>
+          <button class="filter-btn" data-filter="robotics">Robotics</button>
         </div>
+        <div class="projects-grid">
+          <!-- Portfolio Website -->
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img
+                src="assets/images/portfolio.png"
+                alt="Portfolio Website"
+                class="project-img"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Portfolio Website</h3>
+              <div class="project-date">Summer 2025</div>
+              <p>
+                A custom portfolio showcasing my projects, rotating text
+                animations, and responsive design to highlight my skills and
+                experience. This project demonstrates my ability to create
+                modern, interactive web applications with smooth animations and
+                responsive layouts.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React.js Development</span>
+                <span class="tech-tag">Tailwind CSS & Responsive Design</span>
+                <span class="tech-tag">UI/UX Animation and Interaction</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FEI University Robotics -->
+          <div class="project-card" data-category="robotics">
+            <div class="project-image">
+              <img
+                src="assets/images/RoboFei.png"
+                alt="FEI University Robotics Team"
+                class="project-img"
+              />
+            </div>
+            <div class="project-content">
+              <h3>FEI University Robotics</h3>
+              <div class="project-date">Summer 2025</div>
+              <p>
+                Deployed GPU-accelerated computer vision pipeline with ZED 2i
+                depth perception camera, cutting end-to-end latency by 15%.
+                Applied CUDA and ROS on Ubuntu Linux to run autonomous
+                navigation algorithms for a robotics competition.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">GPU-Accelerated Computer Vision</span>
+                <span class="tech-tag">CUDA & ROS Development</span>
+                <span class="tech-tag">Autonomous Navigation Algorithms</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- DPU Research -->
+          <div class="project-card" data-category="fpga">
+            <div class="project-image">
+              <img
+                src="assets/images/dpu.png"
+                alt="DPU Research Project"
+                class="project-img"
+              />
+            </div>
+            <div class="project-content">
+              <h3>FPGA Hardware Pipeline Researcher</h3>
+              <div class="project-date">Spring 2025</div>
+              <p>
+                Delivered an edge native pixels to semantics pipeline for UAV
+                swarms in low-bandwidth, GPS denied settings. Developed a
+                streaming multi-object tracker on a Zynq UltraScale+ FPGA with a
+                quantized on-device LLM for high-level reasoning removing cloud
+                dependence. Built a lightweight accelerator via Vivado achieving
+                ~66.7 ms vision-loop (~15 FPS @ 320×240) at 6–10 W with
+                near-zero uplink and <2% FPGA logic.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Event Camera Scene Analysis</span>
+                <span class="tech-tag">PYNQ FPGA & Machine Learning</span>
+                <span class="tech-tag">Vivado FPGA Acceleration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FireArchy -->
+          <div class="project-card" data-category="ai">
+            <div class="project-image">
+              <img
+                src="assets/images/FireArchy.png"
+                alt="FireArchy"
+                class="project-img"
+              />
+            </div>
+            <div class="project-content">
+              <h3>FireArchy</h3>
+              <div class="project-date">Fall 2024</div>
+              <p>
+                Created a system combining NASA FIRMS API data with a mobile app
+                and hardware alarm to notify users (and at-risk relatives) when
+                wildfires approach.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">IoT & Embedded‐Device Integration</span>
+                <span class="tech-tag">API Data Fusion & Real‐Time Alerts</span>
+                <span class="tech-tag">Storytelling & Problem Framing</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- MediConnect -->
+          <div class="project-card" data-category="web mobile">
+            <div class="project-image">
+              <img
+                src="assets/images/MediConnect.png"
+                alt="MediConnect"
+                class="project-img"
+              />
+            </div>
+            <div class="project-content">
+              <h3>MediConnect</h3>
+              <div class="project-date">Summer 2024</div>
+              <p>
+                Built a web app deployed serverlessly at near-zero cost that
+                translates prescription requests into local medication
+                equivalents via an AI chatbot and locates open pharmacies using
+                the Leaflet API with address geocoding.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">AI-Driven Healthcare Workflows</span>
+                <span class="tech-tag">Geolocation & Mapping APIs</span>
+                <span class="tech-tag">Serverless OpenAI Integration</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- The LeakLock -->
+          <div class="project-card" data-category="robotics">
+            <div class="project-image">
+              <img
+                src="assets/images/LeakLock.JPG"
+                alt="The LeakLock"
+                class="project-img"
+              />
+            </div>
+            <div class="project-content">
+              <h3>The LeakLock</h3>
+              <div class="project-date">Spring 2024</div>
+              <p>
+                Designed a pressure-sensing valve that instantly shuts off
+                damaged sprinkler systems with home and industrial applications.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Rapid Prototyping & CAD Design</span>
+                <span class="tech-tag">Lean Innovation & Pitch Crafting</span>
+                <span class="tech-tag">Collaborative Problem Solving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Work Experience Section -->
     <section id="work" class="work">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <!-- Current Position - FPGA Researcher -->
-                <div class="timeline-item current">
-                    <div class="timeline-marker">
-                        <i class="fas fa-microchip"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="work-header">
-                            <h3>FPGA Researcher</h3>
-                            <h4>University of Florida Computer Engineering Department</h4>
-                            <span class="work-period">January 2025 - Present</span>
-                        </div>
-                        <p class="work-description">
-                            Leading cutting-edge research in Computer Vision Deep Processing Unit development. Streamlined low light event camera scene analysis for UAV applications and developed FPGA-accelerated deep processing units for machine vision applications.
-                        </p>
-                        <div class="work-achievements">
-                            <h5>Key Achievements:</h5>
-                            <ul>
-                                <li>Streamlined low light event camera scene analysis for applications in UAV applications in low light scenarios</li>
-                                <li>Developed hardware pipelines that utilize machine learning on a PYNQ FPGA board in Jupyter Notebooks</li>
-                                <li>Built an FPGA accelerated deep processing unit targeting machine vision via Vivado, cutting end-to-end latency by 15%</li>
-                            </ul>
-                        </div>
-                        <div class="work-tech">
-                            <span class="tech-tag">Computer Vision</span>
-                            <span class="tech-tag">PYNQ FPGA</span>
-                            <span class="tech-tag">Vivado</span>
-                            <span class="tech-tag">Machine Learning</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Software Development Intern -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="work-header">
-                            <h3>Software Development Intern</h3>
-                            <h4>CANAC data processing</h4>
-                            <span class="work-period">May 2025 - July 2025</span>
-                        </div>
-                        <p class="work-description">
-                            Developed scalable data processing solutions and web applications for a leading Brazilian data company. Utilized production data to create real-time analytics and visualization tools with exceptional accuracy.
-                        </p>
-                        <div class="work-achievements">
-                            <h5>Key Achievements:</h5>
-                            <ul>
-                                <li>Utilized the production data from Brazilian cane mills to develop online panels, providing harvesters with real-time analytics and alerts when machines fall below certain thresholds, achieving total case prediction and data accuracy by 20%</li>
-                                <li>Leveraged Google BigQuery to analyze 500,000 data points in a web based climate visualization panel</li>
-                                <li>Built interactive React dashboards using data from flexible learning vector of grid and railway gas station pins</li>
-                            </ul>
-                        </div>
-                        <div class="work-tech">
-                            <span class="tech-tag">React.js</span>
-                            <span class="tech-tag">Google BigQuery</span>
-                            <span class="tech-tag">Data Analytics</span>
-                            <span class="tech-tag">Real-time Systems</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- FEI University Robotics -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="work-header">
-                            <h3>Electrical Team Member</h3>
-                            <h4>FEI University Robotics</h4>
-                            <span class="work-period">May 2025 - July 2025</span>
-                        </div>
-                        <p class="work-description">
-                            Developed advanced computer vision systems for autonomous robotics competition. Deployed GPU-accelerated computer vision pipeline with ZED 2i depth perception camera, significantly improving system performance and enabling real-time autonomous navigation.
-                        </p>
-                        <div class="work-achievements">
-                            <h5>Key Achievements:</h5>
-                            <ul>
-                                <li>Deployed GPU-accelerated computer vision pipeline with ZED 2i depth perception camera, cutting end-to-end latency by 15%</li>
-                                <li>Applied CUDA and ROS on Ubuntu Linux to run autonomous navigation algorithms for a robotics competition</li>
-                            </ul>
-                        </div>
-                        <div class="work-tech">
-                            <span class="tech-tag">CUDA</span>
-                            <span class="tech-tag">ROS</span>
-                            <span class="tech-tag">Computer Vision</span>
-                            <span class="tech-tag">Ubuntu Linux</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Program Leader -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="work-header">
-                            <h3>Program Leader</h3>
-                            <h4>UF Engineering Innovation Institute</h4>
-                            <span class="work-period">May 2024 - October 2024</span>
-                        </div>
-                        <p class="work-description">
-                            One of 14 student coordinators of IGNITE,the only EII backed program promoting entrepreneurship at UF with panels, VCs, and workshops. Worked on campus-wide outreach initiatives, building valuable entrepreneurship partnerships with student organizations.
-                        </p>
-                        <div class="work-achievements">
-                            <h5>Key Achievements:</h5>
-                            <ul>
-                                <li>Assisted in Leading IGNITE, the only EII backed program promoting entrepreneurship at UF with panels, VCs, and workshops</li>
-                                <li>Executed a campus-wide outreach initiative that increased event turnout rates, sinking partnerships with major organizations</li>
-                                <li>Established flagship program events</li>
-                            </ul>
-                        </div>
-                        <div class="work-tech">
-                            <span class="tech-tag">Program Leadership</span>
-                            <span class="tech-tag">Event Management</span>
-                            <span class="tech-tag">Partnership Development</span>
-                            <span class="tech-tag">Entrepreneurship</span>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <!-- Data Analysis Intern -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="work-header">
-                            <h3>Data Analysis Intern</h3>
-                            <h4>LEAD Engineering Contractor</h4>
-                            <span class="work-period">May 2021 - August 2021</span>
-                        </div>
-                        <p class="work-description">
-                            Automated advanced data analysis and stakeholder communication for large-scale construction projects. Developed systems to streamline project workflows and improve decision-making processes for engineering teams.
-                        </p>
-                        <div class="work-achievements">
-                            <h5>Key Achievements:</h5>
-                            <ul>
-                                <li>Automated the analysis of 800+ blueprints to produce estimates of materials needed for construction projects</li>
-                                <li>Navigated Spanish domain operations, synthesizing stakeholder feedback into execution plans to meet deadlines</li>
-                            </ul>
-                        </div>
-                        <div class="work-tech">
-                            <span class="tech-tag">Data Analysis</span>
-                            <span class="tech-tag">Blueprint Analysis</span>
-                            <span class="tech-tag">Project Management</span>
-                            <span class="tech-tag">Construction Planning</span>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+          <!-- Current Position - FPGA Researcher -->
+          <div class="timeline-item current">
+            <div class="timeline-marker">
+              <i class="fas fa-microchip"></i>
             </div>
+            <div class="timeline-content">
+              <div class="work-header">
+                <h3>FPGA Researcher</h3>
+                <h4>University of Florida Computer Engineering Department</h4>
+                <span class="work-period">January 2025 - Present</span>
+              </div>
+              <p class="work-description">
+                Leading cutting-edge research in Computer Vision Deep Processing
+                Unit development. Streamlined low light event camera scene
+                analysis for UAV applications and developed FPGA-accelerated
+                deep processing units for machine vision applications.
+              </p>
+              <div class="work-achievements">
+                <h5>Key Achievements:</h5>
+                <ul>
+                  <li>
+                    Streamlined low light event camera scene analysis for
+                    applications in UAV applications in low light scenarios
+                  </li>
+                  <li>
+                    Developed hardware pipelines that utilize machine learning
+                    on a PYNQ FPGA board in Jupyter Notebooks
+                  </li>
+                  <li>
+                    Built an FPGA accelerated deep processing unit targeting
+                    machine vision via Vivado, cutting end-to-end latency by 15%
+                  </li>
+                </ul>
+              </div>
+              <div class="work-tech">
+                <span class="tech-tag">Computer Vision</span>
+                <span class="tech-tag">PYNQ FPGA</span>
+                <span class="tech-tag">Vivado</span>
+                <span class="tech-tag">Machine Learning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Software Development Intern -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="work-header">
+                <h3>Software Development Intern</h3>
+                <h4>CANAC data processing</h4>
+                <span class="work-period">May 2025 - July 2025</span>
+              </div>
+              <p class="work-description">
+                Developed scalable data processing solutions and web
+                applications for a leading Brazilian data company. Utilized
+                production data to create real-time analytics and visualization
+                tools with exceptional accuracy.
+              </p>
+              <div class="work-achievements">
+                <h5>Key Achievements:</h5>
+                <ul>
+                  <li>
+                    Utilized the production data from Brazilian cane mills to
+                    develop online panels, providing harvesters with real-time
+                    analytics and alerts when machines fall below certain
+                    thresholds, achieving total case prediction and data
+                    accuracy by 20%
+                  </li>
+                  <li>
+                    Leveraged Google BigQuery to analyze 500,000 data points in
+                    a web based climate visualization panel
+                  </li>
+                  <li>
+                    Built interactive React dashboards using data from flexible
+                    learning vector of grid and railway gas station pins
+                  </li>
+                </ul>
+              </div>
+              <div class="work-tech">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Google BigQuery</span>
+                <span class="tech-tag">Data Analytics</span>
+                <span class="tech-tag">Real-time Systems</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FEI University Robotics -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="work-header">
+                <h3>Electrical Team Member</h3>
+                <h4>FEI University Robotics</h4>
+                <span class="work-period">May 2025 - July 2025</span>
+              </div>
+              <p class="work-description">
+                Developed advanced computer vision systems for autonomous
+                robotics competition. Deployed GPU-accelerated computer vision
+                pipeline with ZED 2i depth perception camera, significantly
+                improving system performance and enabling real-time autonomous
+                navigation.
+              </p>
+              <div class="work-achievements">
+                <h5>Key Achievements:</h5>
+                <ul>
+                  <li>
+                    Deployed GPU-accelerated computer vision pipeline with ZED
+                    2i depth perception camera, cutting end-to-end latency by
+                    15%
+                  </li>
+                  <li>
+                    Applied CUDA and ROS on Ubuntu Linux to run autonomous
+                    navigation algorithms for a robotics competition
+                  </li>
+                </ul>
+              </div>
+              <div class="work-tech">
+                <span class="tech-tag">CUDA</span>
+                <span class="tech-tag">ROS</span>
+                <span class="tech-tag">Computer Vision</span>
+                <span class="tech-tag">Ubuntu Linux</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Program Leader -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="work-header">
+                <h3>Program Leader</h3>
+                <h4>UF Engineering Innovation Institute</h4>
+                <span class="work-period">May 2024 - October 2024</span>
+              </div>
+              <p class="work-description">
+                One of 14 student coordinators of IGNITE,the only EII backed
+                program promoting entrepreneurship at UF with panels, VCs, and
+                workshops. Worked on campus-wide outreach initiatives, building
+                valuable entrepreneurship partnerships with student
+                organizations.
+              </p>
+              <div class="work-achievements">
+                <h5>Key Achievements:</h5>
+                <ul>
+                  <li>
+                    Assisted in Leading IGNITE, the only EII backed program
+                    promoting entrepreneurship at UF with panels, VCs, and
+                    workshops
+                  </li>
+                  <li>
+                    Executed a campus-wide outreach initiative that increased
+                    event turnout rates, sinking partnerships with major
+                    organizations
+                  </li>
+                  <li>Established flagship program events</li>
+                </ul>
+              </div>
+              <div class="work-tech">
+                <span class="tech-tag">Program Leadership</span>
+                <span class="tech-tag">Event Management</span>
+                <span class="tech-tag">Partnership Development</span>
+                <span class="tech-tag">Entrepreneurship</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Analysis Intern -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="work-header">
+                <h3>Data Analysis Intern</h3>
+                <h4>LEAD Engineering Contractor</h4>
+                <span class="work-period">May 2021 - August 2021</span>
+              </div>
+              <p class="work-description">
+                Automated advanced data analysis and stakeholder communication
+                for large-scale construction projects. Developed systems to
+                streamline project workflows and improve decision-making
+                processes for engineering teams.
+              </p>
+              <div class="work-achievements">
+                <h5>Key Achievements:</h5>
+                <ul>
+                  <li>
+                    Automated the analysis of 800+ blueprints to produce
+                    estimates of materials needed for construction projects
+                  </li>
+                  <li>
+                    Navigated Spanish domain operations, synthesizing
+                    stakeholder feedback into execution plans to meet deadlines
+                  </li>
+                </ul>
+              </div>
+              <div class="work-tech">
+                <span class="tech-tag">Data Analysis</span>
+                <span class="tech-tag">Blueprint Analysis</span>
+                <span class="tech-tag">Project Management</span>
+                <span class="tech-tag">Construction Planning</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- About Me Section -->
     <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            
-            <!-- About Me Content -->
-            <div class="about-content">
-                <div class="about-card">
-                    <div class="about-image">
-                        <img src="assets/images/prof.png" alt="Professional photo of Gabriel Bendix" class="about-prof-img">
-                    </div>
-                    <div class="about-text">
-                        <h3>Who I Am</h3>
-                        <p class="about-description">
-                            I'm a Computer Engineering student at the University of Florida, passionate about creating innovative solutions that bridge the gap 
-                            between hardware and software. With expertise in FPGA design, embedded systems, and full-stack development, I focus on building 
-                            cutting-edge technology solutions that make a real-world impact.
-                        </p>
-                        <p class="about-description">
-                            Currently working as an FPGA Researcher, I specialize in computer vision deep processing units, machine learning acceleration, 
-                            and event camera systems for UAV applications. When I'm not developing hardware or software, you can find me leading 
-                            entrepreneurship initiatives, competing in robotics competitions, or exploring new technologies that push the boundaries 
-                            of what's possible.
-                        </p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
 
-            <!-- Skills Section -->
-            <div class="skills-section">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Hardware Development</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">FPGA Design</span>
-                            <span class="skill-tag">Digital Signal Processing</span>
-                            <span class="skill-tag">Circuit Design</span>
-                            <span class="skill-tag">Embedded Systems</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Full-Stack Development</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">React.js</span>
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">TypeScript</span>
-                            <span class="skill-tag">Git</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Programming Languages</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">TypeScript</span>
-                            <span class="skill-tag">C++</span>
-                            <span class="skill-tag">Verilog</span>
-                            <span class="skill-tag">VHDL</span>
-                        </div>
-                    </div>
-                </div>
+        <!-- About Me Content -->
+        <div class="about-content">
+          <div class="about-card">
+            <div class="about-image">
+              <img
+                src="assets/images/prof.png"
+                alt="Professional photo of Gabriel Bendix"
+                class="about-prof-img"
+              />
             </div>
+            <div class="about-text">
+              <h3>Who I Am</h3>
 
-            <!-- Education Section -->
-            <div class="education-section">
-                <h2 class="section-title">Education</h2>
-                <div class="education-card">
-                    <div class="education-content">
-                        <div class="education-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="education-info">
-                            <h3>Bachelor of Science in Computer Engineering</h3>
-                            <h4>University of Florida</h4>
-                            <span class="education-period">2022 - EST May 2027</span>
-                            <p class="education-description">
-                                Specialized coursework in FPGA design, embedded systems, computer vision, and machine learning. 
-                                Active in research and entrepreneurship programs with hands-on experience in hardware acceleration 
-                                and deep processing unit development.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+              <p class="about-description">
+                I am currently the Lead Developer at
+                <a
+                  href="https://thelenslink.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >The Lens Link</a
+                >, a company revolutionizing the
+                <strong>eyewear</strong> industry. Aside from full-stack
+                development, I leverage my expertise with FPGA boards and
+                hardware acceleration to conduct part-time research within the
+                Department of Computer Engineering at the
+                <strong>University of Florida</strong>.
+              </p>
+              <p class="about-description">
+                This past summer, I worked as a SWE at
+                <a
+                  href="https://www.canac.com.br/"
+                  target="_blank"
+                  rel="noopener"
+                  >CANAC</a
+                >, a Brazilian <strong>agrotech</strong> startup that leverages
+                data, full-stack development, and AI to make Brazil’s
+                <strong>sugarcane</strong> industry the most advanced in the
+                world. I love to chat about everything from
+                <strong>ultra-low-latency engineering</strong> to gardening or
+                cooking, so feel free to reach out through the contact form
+                below.
+              </p>
             </div>
+          </div>
         </div>
+
+        <!-- Skills Section -->
+        <div class="skills-section">
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Hardware Development</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">FPGA Design</span>
+                <span class="skill-tag">Digital Signal Processing</span>
+                <span class="skill-tag">Circuit Design</span>
+                <span class="skill-tag">Embedded Systems</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Full-Stack Development</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">React.js</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Git</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3>Programming Languages</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">Verilog</span>
+                <span class="skill-tag">VHDL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="education-section">
+          <h2 class="section-title">Education</h2>
+          <div class="education-card">
+            <div class="education-content">
+              <div class="education-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="education-info">
+                <h3>Bachelor of Science in Computer Engineering</h3>
+                <h4>University of Florida</h4>
+                <span class="education-period">2022 - EST May 2027</span>
+                <p class="education-description">
+                  Specialized coursework in FPGA design, embedded systems,
+                  computer vision, and machine learning. Active in research and
+                  entrepreneurship programs with hands-on experience in hardware
+                  acceleration and deep processing unit development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            
-            <!-- Contact Grid -->
-            <div class="contact-grid">
-                <!-- Contact Information -->
-                <div class="contact-info-card">
-                    <h3>Let's Connect</h3>
-                    <p>
-                        I'm always interested in new opportunities and exciting projects. 
-                        Feel free to reach out if you'd like to collaborate or just say hello!
-                    </p>
-                    
-                    <!-- Resume Download -->
-                    <div class="contact-item">
-                        <a href="assets/files/Portfolio-Resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-download">
-                            <i class="fas fa-file-alt"></i> View My Resume
-                        </a>
-                    </div>
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
 
-                    <!-- Social Links -->
-                    <div class="social-section">
-                        <h4>Follow Me</h4>
-                        <div class="contact-social">
-                            <a href="https://github.com/Gabe-Bendix" target="_blank" rel="noopener noreferrer" title="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/gabriel-bendix/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://www.youtube.com/@gabrielbendix3750" target="_blank" rel="noopener noreferrer" title="YouTube">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                            <a href="https://x.com/GabsBends" target="_blank" rel="noopener noreferrer" title="Twitter">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+        <!-- Contact Grid -->
+        <div class="contact-grid">
+          <!-- Contact Information -->
+          <div class="contact-info-card">
+            <h3>Let's Connect</h3>
+            <p>
+              I'm always interested in new opportunities and exciting projects.
+              Feel free to reach out if you'd like to collaborate or just say
+              hello!
+            </p>
 
-                <!-- Contact Form -->
-                <div class="contact-form-card">
-                    <h3>Send Me a Message</h3>
-                    <form class="contact-form" id="contactForm">
-                        <!-- Honeypot field (hidden from users, bots might fill it) -->
-                        <div style="position: absolute; left: -9999px; opacity: 0; pointer-events: none;">
-                            <input type="text" name="website" tabindex="-1" autocomplete="off" />
-                        </div>
-                        
-                        <div class="form-group">
-                            <input
-                                type="text"
-                                name="name"
-                                placeholder="Your Name"
-                                required
-                            />
-                        </div>
-                        <div class="form-group">
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Your Email"
-                                required
-                            />
-                        </div>
-                        <div class="form-group">
-                            <input
-                                type="text"
-                                name="subject"
-                                placeholder="Subject"
-                                required
-                            />
-                        </div>
-                        <div class="form-group">
-                            <textarea
-                                name="message"
-                                placeholder="Your Message"
-                                rows="6"
-                                required
-                            ></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary full-width">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                        <div id="formStatus" class="form-status"></div>
-                    </form>
-                </div>
+            <!-- Resume Download -->
+            <div class="contact-item">
+              <a
+                href="assets/files/Portfolio-Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="resume-download"
+              >
+                <i class="fas fa-file-alt"></i> View My Resume
+              </a>
             </div>
+
+            <!-- Social Links -->
+            <div class="social-section">
+              <h4>Follow Me</h4>
+              <div class="contact-social">
+                <a
+                  href="https://github.com/Gabe-Bendix"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/gabriel-bendix/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="LinkedIn"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a
+                  href="https://www.youtube.com/@gabrielbendix3750"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="YouTube"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a
+                  href="https://x.com/GabsBends"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Twitter"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <h3>Send Me a Message</h3>
+            <form class="contact-form" id="contactForm">
+              <!-- Honeypot field (hidden from users, bots might fill it) -->
+              <div
+                style="
+                  position: absolute;
+                  left: -9999px;
+                  opacity: 0;
+                  pointer-events: none;
+                "
+              >
+                <input
+                  type="text"
+                  name="website"
+                  tabindex="-1"
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  rows="6"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary full-width">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+              <div id="formStatus" class="form-status"></div>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3>Gabriel Bendix</h3>
-                    <p>Computer Engineering Student</p>
-                </div>
-                <div class="footer-social">
-                    <a href="https://github.com/Gabe-Bendix" class="social-link" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/gabriel-bendix/" class="social-link" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@gabrielbendix3750" class="social-link" target="_blank">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="https://x.com/GabsBends" class="social-link" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Gabriel Bendix. All rights reserved.</p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Gabriel Bendix</h3>
+            <p>Computer Engineering Student</p>
+          </div>
+          <div class="footer-social">
+            <a
+              href="https://github.com/Gabe-Bendix"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/gabriel-bendix/"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@gabrielbendix3750"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              href="https://x.com/GabsBends"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Gabriel Bendix. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/projects.js"></script>
     <script src="assets/js/contact.js"></script>
-</body>
+  </body>
 </html>
