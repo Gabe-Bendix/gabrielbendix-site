@@ -14,8 +14,8 @@
     "start": "next start -p 3000"
   },
   "keywords": [
-    "portfolio", 
-    "website", 
+    "portfolio",
+    "website",
     "personal-website",
     "contact-form",
     "vanilla-js",
@@ -33,10 +33,10 @@
     "npm": ">=6.0.0"
   },
   "dependencies": {
-    "next": "^14.2.14",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "nodemailer": "^6.9.8"
+    "next": "^16.0.7",
+    "nodemailer": "^7.0.11",
+    "react": "^19.2.1",
+    "react-dom": "^19.2.1"
   },
   "browserslist": [
     "> 1%",
