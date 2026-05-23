@@ -2,7 +2,7 @@
   "name": "gabrielbendix-portfolio",
   "version": "1.0.0",
   "description": "Gabriel Bendix Personal Portfolio Website - Modern, responsive portfolio showcasing projects, experience, and skills",
-  "main": "api/server.js",
+  "private": true,
   "homepage": "https://gabrielbendix.dev",
   "repository": {
     "type": "git",
@@ -17,7 +17,6 @@
     "portfolio",
     "website",
     "personal-website",
-    "contact-form",
     "vanilla-js",
     "responsive-design",
     "software-engineer",
@@ -34,7 +33,6 @@
   },
   "dependencies": {
     "next": "^16.0.7",
-    "nodemailer": "^7.0.11",
     "react": "^19.2.1",
     "react-dom": "^19.2.1"
   },

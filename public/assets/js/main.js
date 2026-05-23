@@ -85,7 +85,7 @@ function handleScrollNavigation() {
 
   // Update active nav link based on current section
   const activeNavLink = document.querySelector(
-    `.nav-link[href="#${currentSection}"]`
+    `.nav-link[href="#${currentSection}"]`,
   );
   if (activeNavLink && !activeNavLink.classList.contains("active")) {
     updateActiveNavLink(activeNavLink);
@@ -176,7 +176,7 @@ const observer = new IntersectionObserver((entries) => {
 // Observe elements for animation
 document.addEventListener("DOMContentLoaded", () => {
   const animatedElements = document.querySelectorAll(
-    ".project-card, .hero-text, .hero-image"
+    ".project-card, .hero-text, .hero-image",
   );
   animatedElements.forEach((el) => {
     el.style.opacity = "0";
@@ -414,6 +414,7 @@ function initRotatingText() {
     "Software Developer",
     "Computer Engineer",
     "FPGA Researcher",
+    "Incoming TI Intern",
   ];
 
   let currentIndex = 0;

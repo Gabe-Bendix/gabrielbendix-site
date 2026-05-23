@@ -5,6 +5,33 @@ All notable changes to Gabriel Bendix Portfolio will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Removed
+- Gmail SMTP contact-form backend (`api/contact.js`, `api/server.js`,
+  `api/test.js`, `pages/api/contact.js`, `dev-server.js`,
+  `temp_api_backup/`).
+- Frontend contact form and `public/assets/js/contact.js`.
+- `nodemailer` dependency.
+- `EMAIL_FROM`, `EMAIL_TO`, `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`,
+  `SMTP_PASS` environment variable usage. These must be removed from any
+  deployment provider and the Gmail app password should be revoked.
+
+### Changed
+- Contact section is now a single LinkedIn-focused "Let's Connect" card.
+- Featured project is the ISQED 2026 publication on real-time edge
+  semantics for drone swarms via FPGA + on-device LLMs.
+- LensLink marketplace moved to the Other Projects list under the Web
+  Development and Mobile filters.
+- Hero rotating roles include "Incoming Texas Instruments Intern".
+- Who I Am section updated with summer 2026 TI internship details.
+- Added Texas Instruments upcoming-internship entry to Work Experience.
+
+### Security
+- Removed permissive CORS contact endpoint.
+- Removed nodemailer + Gmail SMTP integration from the codebase.
+- Added missing `rel="noopener noreferrer"` to footer social links.
+
 ## [1.0.0] - 2025-09-11
 
 ### Added
@@ -71,14 +98,6 @@ gabrielbendix/
 ├── index.html
 └── package.json
 ```
-
-### Environment Variables Required
-- `EMAIL_TO`: Recipient email address
-- `EMAIL_FROM`: Sender email address  
-- `SMTP_HOST`: SMTP server hostname
-- `SMTP_PORT`: SMTP server port
-- `SMTP_USER`: SMTP username
-- `SMTP_PASS`: SMTP password/app password
 
 ### Browser Support
 - Chrome 90+
