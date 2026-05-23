@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -53,7 +53,7 @@
           </div>
           <div class="hero-text">
             <h1 class="hero-title">
-              Hi i'm Gabriel Bendix, a
+              Hi, I'm Gabriel Bendix, a
               <span class="rotating-text">UF Student</span>
             </h1>
             <p class="hero-description">
@@ -75,57 +75,65 @@
           <div class="featured-project-images">
             <div class="featured-image-grid">
               <img
-                src="assets/images/lenslink.png"
-                alt="LensLink Marketplace - Omnichannel eyewear marketplace"
+                src="assets/images/research.png"
+                alt="Real-time edge-native FPGA + on-device LLM pipeline for drone swarms"
                 class="featured-img"
               />
             </div>
           </div>
           <div class="featured-project-text">
-            <h3 class="featured-project-title">LensLink Marketplace</h3>
+            <h3 class="featured-project-title">
+              Real-Time Edge Semantics for Drone Swarms via FPGA Perception and
+              On-Device LLMs
+            </h3>
+            <p class="featured-project-subtitle">
+              Published Research · FPGA · Edge AI · Drone Swarms
+            </p>
+            <p class="featured-project-publication">
+              Published at ISQED 2026 - The International Symposium on Quality
+              Electronic Design
+            </p>
             <p class="featured-project-description">
-              I lead the development of The Lens Link, a mobile-first,
-              multi-vendor marketplace that pairs independent eyewear sellers
-              with buyers worldwide. The platform fuses a React Native app and a
-              headless Medusa backend to deliver seamless shopping, prescription
-              management and automated fulfillment all while safeguarding user
-              privacy. The app is currently available on the App Store.
+              This work presents a real-time edge-native vision-to-language
+              pipeline for drone swarms. A streaming FPGA front end on a Zynq
+              UltraScale+ MPSoC performs multi-object tracking and emits compact
+              structured state, while an on-device quantized LLM converts
+              trajectories and interaction cues into semantic summaries without
+              relying on cloud connectivity. The system demonstrates
+              low-latency, low-SWaP semantic scene understanding for distributed
+              aerial robotics.
             </p>
             <div class="featured-project-highlights">
-              <h4>Key Features:</h4>
+              <h4>Key Details:</h4>
               <ul>
+                <li>Published at ISQED 2026</li>
+                <li>FPGA + on-device LLM pipeline for drone swarm semantics</li>
+                <li>KV260 / Zynq UltraScale+ MPSoC platform</li>
+                <li>66.7 ms visual pipeline latency at 320×240</li>
+                <li>~2.9 W low-SWaP system operation</li>
+                <li>&lt; 2% LUT/FF resource usage for the FPGA tracker</li>
                 <li>
-                  Unified multi-seller catalog with live stock, variants and
-                  frame-lens bundles
-                </li>
-                <li>
-                  Built-in prescription upload / scanner with automatic
-                  validation at checkout
-                </li>
-                <li>
-                  One-tap Shippo labels and live carrier rates for effortless
-                  seller fulfillment
-                </li>
-                <li>
-                  Secure Stripe payments with split payouts; delete-account flow
-                  with email-ban security
+                  Near-zero continuous uplink — shares semantic summaries
+                  instead of raw video
                 </li>
               </ul>
             </div>
             <div class="featured-project-tech">
-              <span class="tech-tag featured">React Native & TypeScript</span>
-              <span class="tech-tag featured">Medusa</span>
-              <span class="tech-tag featured">Stripe · Shippo · Clerk</span>
+              <span class="tech-tag featured">FPGA Perception</span>
+              <span class="tech-tag featured">On-Device Quantized LLM</span>
+              <span class="tech-tag featured">Zynq UltraScale+ KV260</span>
             </div>
+            <!-- TODO: add final paper URL / PDF once available, e.g.
+                 <a href="assets/files/ISQED-2026-drone-swarm.pdf" target="_blank" rel="noopener noreferrer">Read the paper</a> -->
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Other Projects Section -->
+    <!-- Projects Section -->
     <section id="projects" class="projects">
       <div class="container">
-        <h2 class="section-title">Other Projects</h2>
+        <h2 class="section-title">Projects</h2>
         <div class="filter-buttons">
           <button class="filter-btn active" data-filter="all">All</button>
           <button class="filter-btn" data-filter="web">Web Development</button>
@@ -135,8 +143,35 @@
           <button class="filter-btn" data-filter="robotics">Robotics</button>
         </div>
         <div class="projects-grid">
-          <!-- FPGA Drone Swarm Pipeline -->
-          <div class="project-card" data-category="fpga">
+          <!-- LensLink Marketplace -->
+          <div class="project-card" data-category="web mobile">
+            <div class="project-image">
+              <img
+                src="assets/images/lenslink.png"
+                alt="LensLink Marketplace - Omnichannel eyewear marketplace"
+                class="project-img"
+              />
+            </div>
+            <div class="project-content">
+              <h3>LensLink Marketplace</h3>
+              <div class="project-date">2025 – Present</div>
+              <p>
+                Mobile-first, multi-vendor marketplace pairing independent
+                eyewear sellers with buyers worldwide. A React Native app on a
+                headless Medusa backend handles unified catalog, prescription
+                validation, Shippo labels, and Stripe split payouts. Available
+                on the App Store.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React Native & TypeScript</span>
+                <span class="tech-tag">Medusa</span>
+                <span class="tech-tag">Stripe · Shippo · Clerk</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FPGA Drone Swarm Pipeline (published research) -->
+          <div class="project-card" data-category="fpga ai">
             <div class="project-image">
               <img
                 src="assets/images/research.png"
@@ -146,13 +181,13 @@
             </div>
             <div class="project-content">
               <h3>FPGA Drone Swarm Pipeline</h3>
-              <div class="project-date">Fall 2025</div>
+              <div class="project-date">Published at ISQED 2026</div>
               <p>
                 Co-author on a real-time, edge-native pipeline for drone swarms.
-                An FPGA vision front-end performs multi-object tracking and an
-                on-device LLM turns tracks into compact semantic summaries
-                running on a Zynq UltraScale+ KV260 at ~15 FPS with ~66.7 ms
-                latency and 6–10 W, enabling resilient, no-cloud swarm ops.
+                A streaming FPGA front end on a Zynq UltraScale+ KV260 performs
+                multi-object tracking at 66.7 ms latency while an on-device
+                quantized LLM converts trajectories into semantic summaries —
+                enabling resilient, low-SWaP, no-cloud swarm ops at ~2.9 W.
               </p>
               <div class="project-tech">
                 <span class="tech-tag">FPGA Perception</span>
@@ -305,6 +340,35 @@
       <div class="container">
         <h2 class="section-title">Work Experience</h2>
         <div class="timeline">
+          <!-- Upcoming - Texas Instruments Product Marketing Engineer Intern -->
+          <!-- TODO: replace fa-microchip icon with a Texas Instruments logo asset
+               (e.g. assets/images/ti-logo.png) once a licensed copy is added. -->
+          <div class="timeline-item current">
+            <div class="timeline-marker">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="work-header">
+                <h3>Incoming Product Marketing Engineer Intern</h3>
+                <h4>
+                  Texas Instruments – DC Brushless Motor Drivers · Dallas, Texas
+                </h4>
+                <span class="work-period">June 2026 – Upcoming</span>
+              </div>
+              <p class="work-description">
+                Joining Texas Instruments this summer as a Product Marketing
+                Engineer Intern, working with DC brushless motor drivers and
+                semiconductor product strategy.
+              </p>
+              <div class="work-tech">
+                <span class="tech-tag">Semiconductors</span>
+                <span class="tech-tag">DC Brushless Motor Drivers</span>
+                <span class="tech-tag">Product Marketing</span>
+                <span class="tech-tag">Analog & Power</span>
+              </div>
+            </div>
+          </div>
+
           <!-- Current Position - Development Lead at LensLink -->
           <div class="timeline-item current">
             <div class="timeline-marker">
@@ -594,29 +658,32 @@
                 <a
                   href="https://thelenslink.com/"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   >The Lens Link</a
                 >, a company revolutionizing the
-                <strong>eyewear</strong> industry. Aside from full-stack
-                development, I leverage my expertise with FPGA boards and
-                hardware acceleration to conduct part-time research within the
-                Department of Computer Engineering at the
-                <strong>University of Florida</strong>.
-              </p>
-              <p class="about-description">
-                This past summer, I worked as a SWE at
+                <strong>eyewear</strong> industry. Alongside full-stack
+                development, I use FPGA boards and hardware acceleration to
+                conduct part-time research in the Department of Computer
+                Engineering at the <strong>University of Florida</strong>.
+                Previously, I was a SWE at
                 <a
                   href="https://www.canac.com.br/"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                   >CANAC</a
-                >, a Brazilian <strong>agrotech</strong> startup that leverages
-                data, full-stack development, and AI to make Brazil’s
-                <strong>sugarcane</strong> industry the most advanced in the
-                world. I love to chat about everything from
+                >, a Brazilian <strong>agrotech</strong> startup using data and
+                AI to modernize Brazil's sugarcane industry.
+              </p>
+              <p class="about-description">
+                This summer, I'll be working as a
+                <strong>Product Marketing Engineer Intern</strong> at
+                <strong>Texas Instruments</strong> in Dallas, focusing on DC
+                brushless motor drivers. I love
                 <strong>ultra-low-latency engineering</strong> and
-                <strong> Semiconductor Design </strong> to gardening or cooking,
-                so feel free to reach out through the contact form below.
+                <strong>semiconductor design</strong>, and I'm always happy to
+                connect with people working on embedded systems, startups, or
+                interesting hardware problems — reach out via the LinkedIn link
+                below.
               </p>
             </div>
           </div>
@@ -689,18 +756,27 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
       <div class="container">
-        <h2 class="section-title">Get In Touch</h2>
-
-        <!-- Contact Grid -->
-        <div class="contact-grid">
-          <!-- Contact Information -->
+        <div class="contact-grid contact-grid-single">
           <div class="contact-info-card">
             <h3>Let's Connect</h3>
             <p>
-              I'm always interested in new opportunities and exciting projects.
-              Feel free to reach out if you'd like to collaborate or just say
-              hello!
+              I'm always happy to connect with people working on embedded
+              systems, semiconductors, startups, research, or interesting
+              engineering problems. The best way to reach me is through LinkedIn
+              follow me there or send me a message and I'll get back to you.
             </p>
+
+            <!-- LinkedIn CTA -->
+            <div class="contact-item">
+              <a
+                href="https://www.linkedin.com/in/gabriel-bendix/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary"
+              >
+                <i class="fab fa-linkedin"></i> Connect on LinkedIn
+              </a>
+            </div>
 
             <!-- Resume Download -->
             <div class="contact-item">
@@ -753,66 +829,6 @@
               </div>
             </div>
           </div>
-
-          <!-- Contact Form -->
-          <div class="contact-form-card">
-            <h3>Send Me a Message</h3>
-            <form class="contact-form" id="contactForm">
-              <!-- Honeypot field (hidden from users, bots might fill it) -->
-              <div
-                style="
-                  position: absolute;
-                  left: -9999px;
-                  opacity: 0;
-                  pointer-events: none;
-                "
-              >
-                <input
-                  type="text"
-                  name="website"
-                  tabindex="-1"
-                  autocomplete="off"
-                />
-              </div>
-
-              <div class="form-group">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  name="subject"
-                  placeholder="Subject"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  name="message"
-                  placeholder="Your Message"
-                  rows="6"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary full-width">
-                <i class="fas fa-paper-plane"></i> Send Message
-              </button>
-              <div id="formStatus" class="form-status"></div>
-            </form>
-          </div>
         </div>
       </div>
     </section>
@@ -830,6 +846,7 @@
               href="https://github.com/Gabe-Bendix"
               class="social-link"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i class="fab fa-github"></i>
             </a>
@@ -837,6 +854,7 @@
               href="https://www.linkedin.com/in/gabriel-bendix/"
               class="social-link"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i class="fab fa-linkedin"></i>
             </a>
@@ -844,6 +862,7 @@
               href="https://www.youtube.com/@gabrielbendix3750"
               class="social-link"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i class="fab fa-youtube"></i>
             </a>
@@ -851,6 +870,7 @@
               href="https://x.com/GabsBends"
               class="social-link"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i class="fab fa-twitter"></i>
             </a>
@@ -864,6 +884,5 @@
 
     <script src="assets/js/main.js"></script>
     <script src="assets/js/projects.js"></script>
-    <script src="assets/js/contact.js"></script>
   </body>
 </html>

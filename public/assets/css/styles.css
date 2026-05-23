@@ -1555,6 +1555,36 @@ body {
   border: 1px solid rgba(239, 68, 68, 0.3);
 }
 
+/* Single-column contact layout (LinkedIn-only card) */
+.contact-grid-single {
+  grid-template-columns: minmax(0, 640px);
+  justify-content: center;
+}
+
+.contact-grid-single .contact-info-card {
+  text-align: left;
+}
+
+.contact-grid-single .contact-item {
+  margin-bottom: 1.25rem;
+}
+
+/* Featured project subtitle + publication line */
+.featured-project-subtitle {
+  color: #4ade80;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  font-size: 0.95rem;
+  margin: 0.25rem 0 0.5rem;
+  text-transform: uppercase;
+}
+
+.featured-project-publication {
+  color: #c0c0c0;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   html {
