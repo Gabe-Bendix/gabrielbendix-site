@@ -411,10 +411,10 @@ function initRotatingText() {
 
   const texts = [
     "UF Student",
-    "Software Developer",
+    "SWE",
     "Computer Engineer",
     "FPGA Researcher",
-    "Incoming TI Intern",
+    "Incoming TI Employee",
   ];
 
   let currentIndex = 0;
