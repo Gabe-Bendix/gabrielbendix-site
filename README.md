@@ -11,7 +11,11 @@ directed to LinkedIn to get in touch.
 - **Dynamic Animations**: Glitch effects, smooth scrolling, fade-in animations
 - **LinkedIn-first Contact**: No email backend — single LinkedIn CTA
 - **Project Showcase**: Featured + filterable project sections
-- **Work Timeline**: Professional experience with visual timeline
+- **Featured Research**: Deep-dive card for the ISQED 2026 FPGA drone-swarm
+  paper, including a direct "Read Paper on IEEE" link to IEEE Xplore
+- **Work Timeline**: Professional experience with visual timeline, including
+  the completed Summer 2026 Texas Instruments Product Marketing Engineering
+  internship and the incoming June 2027 full-time return to the same team
 - **Skills & Education**: Technical competencies and academic background
 
 ## Tech Stack
